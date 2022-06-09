@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
 
     if: contains(github.event.pull_request.labels.*.name, 'spin up environment')
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
