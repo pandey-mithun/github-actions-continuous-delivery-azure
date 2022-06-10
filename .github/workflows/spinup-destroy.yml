@@ -3,6 +3,8 @@ name: Configure Azure environment
 on: 
   pull_request:
     types: [labeled]
+  workflow_dispatch:
+  
 
 env:
   AZURE_RESOURCE_GROUP: cd-with-actions
