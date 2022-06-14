@@ -31,6 +31,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscription: true
 
       - name: Create Azure resource group
         if: success()
